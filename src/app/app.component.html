@@ -1,3 +1,30 @@
-<h1>
-  {{title}}
-</h1>
+<app-header (childEvent)="loggedIn=$event" [parentData]="loggedIn">
+
+</app-header>
+<div class="container">
+    <h1>app component works</h1>
+    <h2>Logged in : {{loggedIn}}</h2>
+    <br>
+     <app-user-list></app-user-list>
+     <hr>
+     <app-user-detail></app-user-detail>
+     <hr>
+     <br>
+    <h3>Pipes</h3>
+    <hr> 
+    <h4>{{ 0.25 | currency }}</h4>
+    <h4>{{ 0.25 | currency: 'EUR' }}</h4>
+    <h4>{{ 0.25 | currency: 'EUR': 'code' }}</h4>
+    <h4>{{ 0.25 | currency: 'GBP': 'code' }}</h4>
+    <br>
+    <h4>{{ 0.25 | percent }}</h4>
+    <br>
+    <h4>{{ date }}</h4>
+    <h4>{{ date | date:'short' }}</h4>
+    <h4>{{ date | date:'shortTime' }}</h4>
+    <h4>{{ date | date:'shortDate' }}</h4>
+
+    
+</div>
+
+<app-footer></app-footer>
