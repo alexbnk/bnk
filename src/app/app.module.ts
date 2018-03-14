@@ -15,6 +15,8 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UserService } from './services/user.service';
 import { TestComponent } from './test/test.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { InventoryCategoryListComponent } from './inventory/inventory-category-list/inventory-category-list.component';
+import { InventoryCategoryDetailComponent } from './inventory/inventory-category-detail/inventory-category-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     UserListComponent,
     UserDetailComponent,
     TestComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    InventoryCategoryListComponent,
+    InventoryCategoryDetailComponent
   ],
   imports: [
     BrowserModule,
