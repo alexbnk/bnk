@@ -5,3 +5,8 @@
       font-weight: bold;
 }
 .navbar {background-color: transparent;}
+
+.active {
+      color: "blue";
+
+}

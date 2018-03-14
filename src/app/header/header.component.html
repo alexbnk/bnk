@@ -13,7 +13,7 @@
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inventory
+          <a routerLink="/inventory" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">Inventory
             <span class="caret"></span>
           </a>
           <!-- <ul class="dropdown-menu">
@@ -36,23 +36,12 @@
             </li>
           </ul> -->
         </li>
-        <li class="">
-          <a href="#" >Network </a>
+        <li >
+          <a routerLink="/test" routerLinkActive="active" >Test Area </a>
         </li>
+    
         <li>
-          <a href="#about">Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Orders</a>
-        </li>
-        <li>
-          <a href="#contact">House</a>
-        </li>
-        <li>
-          <a href="#contact">Cars</a>
-        </li>
-        <li>
-          <a href="#contact">{{parentData}}</a>
+          <a >{{parentData}}</a>
         </li>
         
 
@@ -62,11 +51,11 @@
 
         <li class="dropdown">
          
-            <li *ngIf="parentData"><a href="#" role="button" aria-expanded="false">
+            <li *ngIf="parentData"><a  role="button" aria-expanded="false">
               Login</a></li>
 
             <li *ngIf="!parentData" class="dropdown">
-                <a href="#" role="button" aria-expanded="false">Account</a>
+                <a  role="button" aria-expanded="false">Account</a>
                 <ul class="dropdown-menu">
                   <li>
                     <a href="http://www.uk111.uk/forum">Forums</a>
